@@ -1,14 +1,22 @@
-class Person {
-    protected String name;
+package school;
+
+abstract class Person {
+
+    private String name;
     protected int age;
 
-    Person(String name, int age) {
+    public Person(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    void displayInfo() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
+    public String getName() {
+        return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    abstract void displayInfo();
 }
