@@ -1,25 +1,52 @@
+package school;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Main {
+
     public static void main(String[] args) {
 
-        Student s = new Student("Hanna", 18, "ABC School");
-        GraduateStudent g = new GraduateStudent("John", 24, "XYZ University", "AI Research");
-        Teacher t = new Teacher("Mr. Smith", 40, "Mathematics");
+        Scanner input = new Scanner(System.in);
+        ArrayList<Person> people = new ArrayList<>();
 
-        System.out.println("---- Student ----");
-        s.displayInfo();
+        try {
 
-        System.out.println("\n---- Graduate Student ----");
-        g.displayInfo();
+            System.out.print("Enter student name: ");
+            String sName = input.nextLine();
 
-        System.out.println("\n---- Teacher ----");
-        t.displayInfo();
+            System.out.print("Enter student age: ");
+            int sAge = input.nextInt();
 
-        System.out.println("\n---- Static Method Hiding ----");
-        Parent.show();
-        Child.show();
+            System.out.print("Enter grade level: ");
+            int grade = input.nextInt();
+            input.nextLine();
 
-        System.out.println("\n---- Final Class Demo ----");
-        School school = new School();
-        school.showMessage();
+            people.add(new Student(sName, sAge, grade));
+
+            System.out.print("Enter teacher name: ");
+            String tName = input.nextLine();
+
+            System.out.print("Enter teacher age: ");
+            int tAge = input.nextInt();
+            input.nextLine();
+
+            System.out.print("Enter subject: ");
+            String subject = input.nextLine();
+
+            people.add(new Teacher(tName, tAge, subject));
+
+            for(Person p : people){
+                p.displayInfo();
+                System.out.println();
+            }
+
+        }
+
+        catch(Exception e){
+            System.out.println("Invalid input.");
+        }
+
+        input.close();
     }
 }
