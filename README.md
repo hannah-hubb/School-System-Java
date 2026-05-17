@@ -1,42 +1,23 @@
-# School System Project (Java)
+# Enhanced School System Project
 
 ## Description
-This project is a simple Java application created to demonstrate Object-Oriented Programming (OOP) concepts, especially inheritance and class relationships.
+This project is a simple Java program that demonstrates Object-Oriented Programming concepts.
 
-## Purpose
-The purpose of this project is to understand how Java classes interact using inheritance, method overriding, and OOP principles like super, this, and final.
+## Features
+– Encapsulation using private variables  
+– Constructors  
+– Inheritance using extends  
+– Method overriding  
+– Polymorphism  
+– Abstraction  
+– Packages  
+– Access modifiers  
+– ArrayList  
+– Scanner input  
+– Exception handling using try–catch  
 
 ## Functionality
-- Models different people in a school system (Student, Teacher, Graduate Student)
-- Demonstrates single, multilevel, and hierarchical inheritance
-- Shows method overriding using displayInfo()
-- Uses static method hiding example
-- Includes final class and final method demonstration
-- Displays all object information in the console
-
-## Concepts Used
-- extends keyword
-- Superclass and subclass
-- Single inheritance
-- Multilevel inheritance
-- Hierarchical inheritance
-- Method overriding
-- super keyword
-- this keyword
-- protected access modifier
-- static method hiding
-- final class and final method
-- implicit super() constructor calls
-
-## How to Run
-1. Compile all files:
-   javac *.java
-
-2. Run the program:
-   java Main
-
-## Output Example
-The program prints student, teacher, and graduate student details in the console.
+The program accepts student and teacher information from the user and displays it using polymorphism.
 
 ## Author
 Hanna
